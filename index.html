@@ -6,8 +6,105 @@
     <title>HTML실습</title>
   </head>
   <body>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, tempora?
-    </p>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, tempora?
+      </p>
+      <a href="https://www.naver.com/" target="_blank"> 네이버 바로가기 </a>
+    </div>
+    <div>
+      <a href="">구글 바로가기</a>
+    </div>
+    <!-- START: 텍스트 태그 -->
+    <div style="border: 1px solid red">
+      <h1>네이버</h1>
+      <h3>반갑습니다.</h3>
+      <p>
+        Lorem ipsum <strong>dolor</strong> sit amet consectetur adipisicing
+        elit.<br />Autem assumenda labore atque
+        <span style="color: red">error</span> porro! Accusantium aliquam aut
+        dolorum quasi qui. Nemo hic quam distinctio voluptas, sunt maxime aut
+        accusantium magni?
+      </p>
+      <span>안녕?</span>
+      <br />
+      <span>지금은 오후 1시 34입니다.</span>
+    </div>
+    <!-- END: 텍스트 태그 -->
+    <!-- START: 이미지 태그 -->
+    <div>
+      <img
+        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F117%2F2025%2F07%2F02%2F0003960248_002_20250702200011253.jpg&type=sc960_832"
+        alt="에스파 윈터 이미지"
+      />
+    </div>
+    <!-- END: 이미지 태그 -->
+    <!-- 리스트 태그 -->
+    <ul>
+      <li>첫번째 아이템</li>
+      <li>두번째 아이템</li>
+      <li>세번째 아이템</li>
+    </ul>
+    <ol>
+      <li>첫번째 아이템</li>
+      <li>두번째 아이템</li>
+      <li>세번째 아이템</li>
+    </ol>
+    <ol>
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+    </ol>
+    <dl>
+      <dt>HTML</dt>
+      <dd>웹 페이지의 구조를 정의하는 언어</dd>
+      <dt>CSS</dt>
+      <dd>웹 페이지의 스타일을 정의하는 언어</dd>
+    </dl>
+    <!-- form요소 -->
+    <form>
+      <h3>로그인</h3>
+      <div>
+        <span>ID</span>
+        <input type="text" />
+      </div>
+      <div>
+        <span>PassWord</span>
+        <input type="password" />
+      </div>
+      <div>
+        <p>라디오 버튼</p>
+        <input type="radio" name="gender" value="male" />남성
+        <input type="radio" name="gender" value="female" />여성
+      </div>
+      <div>
+        <p>체크박스 버튼</p>
+        <div style="border: 1px solid red; display: inline-block">
+          <label for="reading">독서</label>
+          <input type="checkbox" name="hobby" value="reading" id="reading" />
+        </div>
+
+        <div style="border: 1px solid red; display: inline-block">
+          <label for="sports">운동</label>
+          <input type="checkbox" name="hobby" value="sports" id="sports" />
+        </div>
+      </div>
+      <!-- 텍스트블록 -->
+      <p>텍스트 블록</p>
+      <textarea name="message" id="" rows="4" cols="50"></textarea>
+      <!-- Select 요소 -->
+
+      <div>
+        <label for="size">크기 선택:</label>
+        <select name="size" id="size">
+          <option value="">선택해주세요</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+      <!-- 미션1: 좋아하는 음식 선택하는 입력요소 만들기 -->
+      <!-- 미션2: 라디오 버튼도 label태그를 이용해서 텍스트 연결하기 -->
+    </form>
   </body>
 </html>
